@@ -16,17 +16,17 @@ body {
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  position: relative;
-  overflow: hidden;
 }
 .active {
   display: block;
 }
-@keyframes fadeout {
+@keyframes fadeOut {
   0% {
     opacity: 1;
+    transform: rotate(5deg) translateX(0);
   }
   100% {
     opacity: 0;
+    transform: rotate(-15deg) translateX(-100%);
   }
 }
