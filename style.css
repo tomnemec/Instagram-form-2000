@@ -14,21 +14,34 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  font-size: 1.1rem;
 }
 input {
+  margin-top: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  height: 30px;
+}
+form {
+  width: 90%;
 }
 button {
   border-radius: 5px;
   border: 1px solid #ccc;
   padding: 10px;
+  margin: 5px;
+}
+button:hover {
+  cursor: pointer;
+  background: #784ba0;
+  color: white;
+  animation: shake 0.5s ease-in-out;
 }
 .card {
   padding: 20px;
   display: none;
   width: 300px;
-  height: 300px;
+  height: 400px;
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -43,6 +56,17 @@ button {
 }
 .active {
   display: flex;
+}
+.switchText {
+  color: blue;
+  text-decoration: underline;
+}
+.switchText:hover {
+  cursor: pointer;
+}
+.link {
+  position: relative;
+  bottom: -80px;
 }
 @keyframes fadeOut {
   0% {
@@ -62,5 +86,22 @@ button {
   100% {
     opacity: 1;
     transform: rotate(0) translateX(0);
+  }
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
