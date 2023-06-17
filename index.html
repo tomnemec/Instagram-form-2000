@@ -4,16 +4,43 @@
     <meta charset="utf-8" />
     <title>Sign Up/Sign In Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
   </head>
   <body>
     <div id="signup" class="card">
-      <h2>Sign Up</h2>
-      <form></form>
-      <button onclick="switchToLogin()">Sign In</button>
+      <h2>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <i class="fas fa-user"></i> New account
+      </h2>
+      <form action="">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input name="email" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input name="password" type="password" />
+        </div>
+        <div class="form-group">
+          <label for="password-repeat">Password repeat:</label>
+          <input name="password-repeat" type="password" />
+        </div>
+        <button type="submit">Create</button>
+      </form>
+      <p class="link-signUp">
+        Aready had an account?
+        <span class="switchText" onclick="switchToLogin()"> Sign in!</span>
+      </p>
     </div>
 
     <div id="login" class="card active">
-      <h2>Sign In</h2>
+      <h2><i class="fas fa-key"></i> Sign In</h2>
       <form action="">
         <div class="form-group">
           <label for="email">Email:</label>
@@ -25,7 +52,7 @@
         </div>
         <button type="submit">Sign In</button>
       </form>
-      <p class="link">
+      <p class="link-login">
         Don t have account yet?
         <span class="switchText" onclick="switchToSignUp()"> Sign up!</span>
       </p>

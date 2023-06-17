@@ -16,6 +16,9 @@ body {
   flex-direction: column;
   font-size: 1.1rem;
 }
+i {
+  opacity: 0.5;
+}
 input {
   margin-top: 10px;
   border-radius: 5px;
@@ -60,13 +63,20 @@ button:hover {
 .switchText {
   color: blue;
   text-decoration: underline;
+  font-size: 1rem;
 }
 .switchText:hover {
   cursor: pointer;
 }
-.link {
+.link-login {
   position: relative;
   bottom: -80px;
+  font-size: 1rem;
+}
+.link-signUp {
+  position: relative;
+  bottom: -10px;
+  font-size: 1rem;
 }
 @keyframes fadeOut {
   0% {
