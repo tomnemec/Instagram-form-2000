@@ -1,15 +1,23 @@
 
+const signup = document.getElementById("signup");
+const login = document.getElementById("login");
 switchToSignUp = () => {
-    const card = document.getElementById("signup");
-    card.style.animationName = "fadeOut";
-    card.style.animationDuration = "1s";
-    document.getElementById("login").style.display = "none";
-    document.getElementById("signup").style.display = "block";
+    login.style.animationName = "fadeOut";
+    login.style.animationDuration = "1s";     
+    setTimeout(() => {
+        login.style.display = "none";
+        signup.style.animationName = "fadeIn";
+        signup.style.animationDuration = "1s";    
+        signup.style.display = "flex";
+    }, 900);
 }
 switchToLogin = () => {
-    const card = document.getElementById("login");
-    card.style.animationName = "fadeOut";
-    card.style.animationDuration = "1s";
-    document.getElementById("login").style.display = "block";
-    document.getElementById("signup").style.display = "none";
+    signup.style.animationName = "fadeOut";
+    signup.style.animationDuration = "1s";     
+    setTimeout(() => {
+        signup.style.display = "none";
+        login.style.animationName = "fadeIn";
+        login.style.animationDuration = "1s";    
+        login.style.display = "flex";
+    }, 900);
 }
